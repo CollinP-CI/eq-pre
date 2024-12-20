@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_http_red_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the HTTP event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the HTTP client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the HTTP server" },
-    { "name": "threat_level", "type": "string", "description": "Assigned threat level (e.g., high, medium)" },
-    { "name": "details", "type": "string", "description": "Additional details about the flagged HTTP traffic" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "RequestMethod", "type": "string" },
+    { "name": "RequestURI", "type": "string" },
+    { "name": "ResponseCode", "type": "int" },
+    { "name": "IsRedTeamActivity", "type": "bool" },
+    { "name": "MaliciousConfidenceScore", "type": "real" }
   ]
 },
     "plan": "Analytics"
