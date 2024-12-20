@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_local_subnets_CL",
   "columns": [
- { "name": "subnet_id", "type": "string", "description": "Unique identifier for the subnet" },
-    { "name": "subnet_address", "type": "string", "description": "Subnet address (e.g., 192.168.1.0/24)" },
-    { "name": "netmask", "type": "string", "description": "Netmask for the subnet" },
-    { "name": "description", "type": "string", "description": "Description of the subnet's purpose" },
-    { "name": "last_seen", "type": "datetime", "description": "Last observed activity on the subnet" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "Subnet", "type": "string" },
+    { "name": "TrafficVolume", "type": "real" },
+    { "name": "ActiveHosts", "type": "int" },
+    { "name": "BroadcastTraffic", "type": "real" },
+    { "name": "MulticastTraffic", "type": "real" }
   ]
 }
   ]
