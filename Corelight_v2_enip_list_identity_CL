@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_enip_list_identity_CL",
   "columns": [
-{ "name": "timestamp", "type": "datetime", "description": "Time of the ListIdentity request" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the ENIP client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the ENIP server" },
-    { "name": "identity_response", "type": "string", "description": "Details of the identity response" },
-    { "name": "response_time", "type": "float", "description": "Time taken to respond in seconds" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "DeviceName", "type": "string" },
+    { "name": "DeviceType", "type": "string" },
+    { "name": "ResponseTime", "type": "real" }
   ]
 },
     "plan": "Analytics"
