@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_domains_CL",
   "columns": [
- { "name": "domain_name", "type": "string", "description": "Fully qualified domain name" },
-    { "name": "registrar", "type": "string", "description": "Domain registrar" },
-    { "name": "creation_date", "type": "datetime", "description": "Domain creation date" },
-    { "name": "expiration_date", "type": "datetime", "description": "Domain expiration date" },
-    { "name": "category", "type": "string", "description": "Category of the domain (e.g., business, social media)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "DeviceIP", "type": "string" },
+    { "name": "DeviceMAC", "type": "string" },
+    { "name": "DeviceType", "type": "string" },
+    { "name": "LastSeen", "type": "datetime" },
+    { "name": "OS", "type": "string" }
   ]
 },
     "plan": "Analytics"
