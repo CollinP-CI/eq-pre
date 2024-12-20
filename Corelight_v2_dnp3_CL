@@ -7,11 +7,12 @@ $tableParams = @'
     { "name": "TimeGenerated", "type": "datetime" },
     { "name": "SourceIP", "type": "string" },
     { "name": "DestinationIP", "type": "string" },
-    { "name": "FunctionCode", "type": "string" },
-    { "name": "ResponseCode", "type": "string" },
-    { "name": "DataSize", "type": "int" },
-    { "name": "SessionDuration", "type": "int" },
-    { "name": "ErrorFlag", "type": "bool" }
+    { "name": "Query", "type": "string" },
+    { "name": "Response", "type": "string" },
+    { "name": "QueryType", "type": "string" },
+    { "name": "IsRedTeamActivity", "type": "bool" },
+    { "name": "TTL", "type": "int" },
+    { "name": "MaliciousConfidenceScore", "type": "real" }
   ]
 },
     "plan": "Analytics"
