@@ -4,11 +4,16 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_notice_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the notice event" },
-    { "name": "notice_type", "type": "string", "description": "Type of the notice (e.g., policy violation, threat detected)" },
-    { "name": "source_ip", "type": "string", "description": "Source IP address related to the notice" },
-    { "name": "destination_ip", "type": "string", "description": "Destination IP address related to the notice" },
-    { "name": "severity", "type": "string", "description": "Severity level of the notice (e.g., low, medium, high)" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "NoticeID", "type": "string" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "SourcePort", "type": "int" },
+        { "name": "DestinationPort", "type": "int" },
+        { "name": "NoticeType", "type": "string" },
+        { "name": "Severity", "type": "int" },
+        { "name": "Message", "type": "string" },
+        { "name": "Category", "type": "string" }
   ]
 },
     "plan": "Analytics"
