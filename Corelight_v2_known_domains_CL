@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_domains_CL",
   "columns": [
-    { "name": "TimeGenerated", "type": "datetime" },
-    { "name": "DomainName", "type": "string" },
-    { "name": "LastResolved", "type": "datetime" },
-    { "name": "ReputationScore", "type": "real" },
-    { "name": "Category", "type": "string" }
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "DomainName", "type": "string" },
+        { "name": "DomainType", "type": "string" },
+        { "name": "DomainStatus", "type": "string" },
+        { "name": "Registrar", "type": "string" },
+        { "name": "CreationDate", "type": "datetime" },
+        { "name": "ExpiryDate", "type": "datetime" },
+        { "name": "TTL", "type": "int" }
 },
     "plan": "Analytics"
 }
