@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_remotes_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of observation" },
-    { "name": "remote_ip", "type": "string", "description": "IP address of the remote endpoint" },
-    { "name": "remote_port", "type": "integer", "description": "Port number used by the remote endpoint" },
-    { "name": "protocol", "type": "string", "description": "Protocol used for the connection" },
-    { "name": "last_activity", "type": "datetime", "description": "Last observed activity for this remote" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "RemoteIP", "type": "string" },
+    { "name": "ConnectionCount", "type": "int" },
+    { "name": "LastConnection", "type": "datetime" },
+    { "name": "ReputationScore", "type": "real" }
   ]
 },
     "plan": "Analytics"
