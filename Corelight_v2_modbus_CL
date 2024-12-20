@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_modbus_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the Modbus client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the Modbus server" },
-    { "name": "function_code", "type": "integer", "description": "Modbus function code used in the request" },
-    { "name": "response_status", "type": "string", "description": "Status of the response (e.g., success, error)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "FunctionCode", "type": "int" },
+    { "name": "UnitID", "type": "int" },
+    { "name": "Data", "type": "string" }
   ]
 },
     "plan": "Analytics"
