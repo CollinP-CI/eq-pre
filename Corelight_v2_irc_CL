@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_irc_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the event" },
-    { "name": "source_ip", "type": "string", "description": "Source IP address" },
-    { "name": "destination_ip", "type": "string", "description": "Destination IP address" },
-    { "name": "channel", "type": "string", "description": "IRC channel name" },
-    { "name": "message", "type": "string", "description": "Message content (if captured)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "Nick", "type": "string" },
+    { "name": "Command", "type": "string" },
+    { "name": "Response", "type": "string" },
+    { "name": "Channel", "type": "string" }
   ]
 },
     "plan": "Analytics"
