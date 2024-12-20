@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_iso_cotp_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the event" },
-    { "name": "source_ip", "type": "string", "description": "Source IP address" },
-    { "name": "destination_ip", "type": "string", "description": "Destination IP address" },
-    { "name": "cotp_type", "type": "string", "description": "Type of the COTP message" },
-    { "name": "session_id", "type": "string", "description": "Session ID for the connection" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "PDUType", "type": "string" },
+    { "name": "ProtocolVersion", "type": "string" },
+    { "name": "SessionID", "type": "string" },
+    { "name": "MessageLength", "type": "int" }
   ]
 },
     "plan": "Analytics"
