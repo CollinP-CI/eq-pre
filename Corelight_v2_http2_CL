@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_http2_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the HTTP/2 event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the HTTP/2 client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the HTTP/2 server" },
-    { "name": "method", "type": "string", "description": "HTTP/2 method used (e.g., GET, POST)" },
-    { "name": "response_code", "type": "integer", "description": "HTTP/2 response code" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "RequestMethod", "type": "string" },
+    { "name": "RequestURI", "type": "string" },
+    { "name": "ResponseCode", "type": "int" },
+    { "name": "ResponseSize", "type": "int" },
+    { "name": "UserAgent", "type": "string" }
   ]
 },
     "plan": "Analytics"
