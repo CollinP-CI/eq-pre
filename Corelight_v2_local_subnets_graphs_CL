@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_local_subnets_graphs_CL",
   "columns": [
-  { "name": "graph_id", "type": "string", "description": "Unique identifier for the graph" },
-    { "name": "subnet_a", "type": "string", "description": "Address of the first subnet in the relationship" },
-    { "name": "subnet_b", "type": "string", "description": "Address of the second subnet in the relationship" },
-    { "name": "relationship_type", "type": "string", "description": "Type of relationship (e.g., traffic flow, shared devices)" },
-    { "name": "last_activity", "type": "datetime", "description": "Last observed activity between the subnets" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "Subnet", "type": "string" },
+    { "name": "NodeCount", "type": "int" },
+    { "name": "EdgeCount", "type": "int" },
+    { "name": "GraphDensity", "type": "real" },
+    { "name": "TrafficVolume", "type": "real" }
   ]
 },
     "plan": "Analytics"
