@@ -2,16 +2,19 @@ $tableParams = @'
 {
   "properties": {
   "schema": {
-  "name": "Corelight_v2_local_subnets_CL",
-  "columns": [
-    { "name": "TimeGenerated", "type": "datetime" },
-    { "name": "Subnet", "type": "string" },
-    { "name": "TrafficVolume", "type": "real" },
-    { "name": "ActiveHosts", "type": "int" },
-    { "name": "BroadcastTraffic", "type": "real" },
-    { "name": "MulticastTraffic", "type": "real" }
-  ]
-},
+    "name": "Corelight_v2_local_subnets_CL",
+    "properties": {
+      "columns": [
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "Subnet", "type": "string" },
+        { "name": "TrafficVolume", "type": "real" },
+        { "name": "ActiveHosts", "type": "int" },
+        { "name": "BroadcastTraffic", "type": "real" },
+        { "name": "MulticastTraffic", "type": "real" }
+      ]
+    }
+  }
+}
     "plan": "Analytics"
 }
 '@
