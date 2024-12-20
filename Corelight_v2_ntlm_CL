@@ -4,7 +4,7 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_ntlm_CL",
   "columns": [
- { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "TimeGenerated", "type": "datetime" },
         { "name": "SourceIP", "type": "string" },
         { "name": "DestinationIP", "type": "string" },
         { "name": "NTLMVersion", "type": "int" },
