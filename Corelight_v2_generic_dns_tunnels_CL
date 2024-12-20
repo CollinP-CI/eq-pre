@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_generic_dns_tunnels_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the DNS tunneling event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the DNS server" },
-    { "name": "query", "type": "string", "description": "Suspicious DNS query" },
-    { "name": "tunnel_type", "type": "string", "description": "Type of DNS tunneling detected" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "Query", "type": "string" },
+    { "name": "QueryType", "type": "string" },
+    { "name": "ResponseTime", "type": "real" },
+    { "name": "SuspiciousFlag", "type": "bool" }
   ]
 },
     "plan": "Analytics"
