@@ -5,12 +5,12 @@ $tableParams = @'
   "name": "Corelight_v2_kerberos_CL",
   "columns": [
     { "name": "TimeGenerated", "type": "datetime" },
-    { "name": "ClientIP", "type": "string" },
-    { "name": "ServerIP", "type": "string" },
-    { "name": "ServiceName", "type": "string" },
-    { "name": "TicketOptions", "type": "string" },
-    { "name": "EncryptionType", "type": "string" },
-    { "name": "AuthenticationResult", "type": "string" }
+    { "name": "CertificateID", "type": "string" },
+    { "name": "Issuer", "type": "string" },
+    { "name": "Subject", "type": "string" },
+    { "name": "ValidityPeriod", "type": "string" },
+    { "name": "SHA1Fingerprint", "type": "string" },
+    { "name": "KeyAlgorithm", "type": "string" }
   ]
 },
     "plan": "Analytics"
