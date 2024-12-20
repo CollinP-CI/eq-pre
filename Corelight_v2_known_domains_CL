@@ -5,12 +5,10 @@ $tableParams = @'
   "name": "Corelight_v2_known_domains_CL",
   "columns": [
     { "name": "TimeGenerated", "type": "datetime" },
-    { "name": "DeviceIP", "type": "string" },
-    { "name": "DeviceMAC", "type": "string" },
-    { "name": "DeviceType", "type": "string" },
-    { "name": "LastSeen", "type": "datetime" },
-    { "name": "OS", "type": "string" }
-  ]
+    { "name": "DomainName", "type": "string" },
+    { "name": "LastResolved", "type": "datetime" },
+    { "name": "ReputationScore", "type": "real" },
+    { "name": "Category", "type": "string" }
 },
     "plan": "Analytics"
 }
