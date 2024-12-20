@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_files_red_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the file event" },
-    { "name": "file_hash", "type": "string", "description": "Hash of the suspicious file" },
-    { "name": "file_name", "type": "string", "description": "Name of the file" },
-    { "name": "threat_level", "type": "string", "description": "Assigned threat level (e.g., high, medium)" },
-    { "name": "details", "type": "string", "description": "Additional details about the flagged file" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "FileName", "type": "string" },
+    { "name": "FileSize", "type": "int" },
+    { "name": "Hash", "type": "string" },
+    { "name": "MaliciousFlag", "type": "bool" },
+    { "name": "IsRedTeamActivity", "type": "bool" },
+    { "name": "DetectionConfidenceScore", "type": "real" }
   ]
 },
     "plan": "Analytics"
