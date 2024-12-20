@@ -4,11 +4,11 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_mqtt_subscribe_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the subscription event" },
-    { "name": "client_id", "type": "string", "description": "Unique identifier of the MQTT client" },
-    { "name": "topic", "type": "string", "description": "MQTT topic to which the client subscribed" },
-    { "name": "qos_level", "type": "integer", "description": "Quality of Service (QoS) level for the subscription" },
-    { "name": "subscription_status", "type": "string", "description": "Status of the subscription (e.g., success, failed)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "ClientID", "type": "string" },
+    { "name": "TopicFilter", "type": "string" },
+    { "name": "SubscriptionOptions", "type": "string" },
+    { "name": "RequestedQoS", "type": "int" }
   ]
 },
     "plan": "Analytics"
