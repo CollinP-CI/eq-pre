@@ -4,11 +4,15 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_dns_red_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the DNS query" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the client making the DNS query" },
-    { "name": "query", "type": "string", "description": "Domain name queried" },
-    { "name": "response_code", "type": "string", "description": "DNS response code (e.g., NOERROR, NXDOMAIN)" },
-    { "name": "threat_level", "type": "string", "description": "Threat level associated with the query (e.g., high, medium)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "Query", "type": "string" },
+    { "name": "Response", "type": "string" },
+    { "name": "QueryType", "type": "string" },
+    { "name": "IsRedTeamActivity", "type": "bool" },
+    { "name": "TTL", "type": "int" },
+    { "name": "MaliciousConfidenceScore", "type": "real" }
   ]
 },
     "plan": "Analytics"
