@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_users_CL",
   "columns": [
-    { "name": "user_id", "type": "string", "description": "Unique identifier for the user" },
-    { "name": "username", "type": "string", "description": "Username of the user" },
-    { "name": "role", "type": "string", "description": "Role of the user (e.g., admin, user)" },
-    { "name": "last_login", "type": "datetime", "description": "Last login time of the user" },
-    { "name": "status", "type": "string", "description": "Current status of the user (e.g., active, inactive)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "UserName", "type": "string" },
+    { "name": "UserID", "type": "string" },
+    { "name": "LastLogin", "type": "datetime" },
+    { "name": "AssociatedIP", "type": "string" },
+    { "name": "AuthenticationMethod", "type": "string" },
+    { "name": "AccountStatus", "type": "string" }
   ]
 },
     "plan": "Analytics"
