@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_dns_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the DNS query" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the DNS client" },
-    { "name": "query", "type": "string", "description": "Domain name queried" },
-    { "name": "response", "type": "string", "description": "DNS response data" },
-    { "name": "response_time", "type": "float", "description": "Time taken to respond in seconds" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "Query", "type": "string" },
+    { "name": "Response", "type": "string" },
+    { "name": "QueryType", "type": "string" },
+    { "name": "TTL", "type": "int" },
+    { "name": "ResponseTime", "type": "real" }
   ]
 },
     "plan": "Analytics"
