@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_log4shell_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the detection" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the source" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the target" },
-    { "name": "request_payload", "type": "string", "description": "Payload of the suspected request" },
-    { "name": "alert_level", "type": "string", "description": "Severity level of the detection (e.g., high, medium)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "Payload", "type": "string" },
+    { "name": "VulnerabilityDetected", "type": "string" },
+    { "name": "ExploitAttempted", "type": "string" }
   ]
 },
     "plan": "Analytics"
