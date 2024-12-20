@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_enip_debug_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the debug event" },
-    { "name": "debug_level", "type": "string", "description": "Debug level (e.g., info, error)" },
-    { "name": "source_ip", "type": "string", "description": "Source IP address of the ENIP client" },
-    { "name": "destination_ip", "type": "string", "description": "Destination IP address of the ENIP server" },
-    { "name": "message", "type": "string", "description": "Details of the debug message" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "DebugMessage", "type": "string" },
+    { "name": "ErrorFlag", "type": "bool" },
+    { "name": "SessionID", "type": "string" }
   ]
 },
     "plan": "Analytics"
