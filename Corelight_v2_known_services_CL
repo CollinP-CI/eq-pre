@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_known_services_CL",
   "columns": [
-    { "name": "service_name", "type": "string", "description": "Name of the known service" },
-    { "name": "service_type", "type": "string", "description": "Type of the service (e.g., HTTP, FTP)" },
-    { "name": "host_ip", "type": "string", "description": "IP address hosting the service" },
-    { "name": "port", "type": "integer", "description": "Port number on which the service is running" },
-    { "name": "last_seen", "type": "datetime", "description": "Last observed activity of the service" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "ServiceName", "type": "string" },
+    { "name": "Protocol", "type": "string" },
+    { "name": "Port", "type": "int" },
+    { "name": "HostIP", "type": "string" },
+    { "name": "FirstSeen", "type": "datetime" },
+    { "name": "LastSeen", "type": "datetime" }
   ]
 },
     "plan": "Analytics"
