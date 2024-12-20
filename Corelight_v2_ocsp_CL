@@ -5,10 +5,10 @@ $tableParams = @'
   "name": "Corelight_v2_ocsp_CL",
   "columns": [
         { "name": "TimeGenerated", "type": "datetime" },
-        { "name": "SourceIP", "type": "string" },
-        { "name": "ResponderURL", "type": "string" },
-        { "name": "CertificateSerial", "type": "string" },
-        { "name": "ResponseStatus", "type": "string" }
+        { "name": "SwitchID", "type": "string" },
+        { "name": "ControllerIP", "type": "string" },
+        { "name": "PacketCount", "type": "int" },
+        { "name": "ByteCount", "type": "int" }
   ]
 },
     "plan": "Analytics"
