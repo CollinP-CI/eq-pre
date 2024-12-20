@@ -6,9 +6,10 @@ $tableParams = @'
   "columns": [
         { "name": "TimeGenerated", "type": "datetime" },
         { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
         { "name": "Username", "type": "string" },
-        { "name": "AuthenticationType", "type": "string" },
-        { "name": "ResponseCode", "type": "string" }
+        { "name": "SessionType", "type": "string" },
+        { "name": "Duration", "type": "real" }
   ]
 },
     "plan": "Analytics"
