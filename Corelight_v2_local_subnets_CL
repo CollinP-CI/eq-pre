@@ -9,7 +9,6 @@ $tableParams = @'
     { "name": "TrafficVolume", "type": "real" },
     { "name": "ActiveHosts", "type": "int" },
     { "name": "BroadcastTraffic", "type": "real" },
-    { "name": "MulticastTraffic", "type": "real" }
   ]
 }
   ]
