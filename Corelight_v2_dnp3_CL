@@ -4,11 +4,14 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_dnp3_CL",
   "columns": [
-    { "name": "timestamp", "type": "datetime", "description": "Time of the DNP3 event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the DNP3 client" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the DNP3 server" },
-    { "name": "function_code", "type": "integer", "description": "DNP3 function code used" },
-    { "name": "response_status", "type": "string", "description": "Response status (e.g., success, error)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "FunctionCode", "type": "string" },
+    { "name": "ResponseCode", "type": "string" },
+    { "name": "DataSize", "type": "int" },
+    { "name": "SessionDuration", "type": "int" },
+    { "name": "ErrorFlag", "type": "bool" }
   ]
 },
     "plan": "Analytics"
