@@ -4,11 +4,12 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_mqtt_connect_CL",
   "columns": [
-  { "name": "timestamp", "type": "datetime", "description": "Time of the connection event" },
-    { "name": "client_id", "type": "string", "description": "Unique identifier of the MQTT client" },
-    { "name": "broker_ip", "type": "string", "description": "IP address of the MQTT broker" },
-    { "name": "protocol_version", "type": "string", "description": "Version of the MQTT protocol used" },
-    { "name": "connection_status", "type": "string", "description": "Status of the connection (e.g., success, failed)" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "ClientID", "type": "string" },
+    { "name": "BrokerIP", "type": "string" },
+    { "name": "ConnectFlags", "type": "string" },
+    { "name": "ProtocolVersion", "type": "string" },
+    { "name": "KeepAlive", "type": "int" }
   ]
 },
     "plan": "Analytics"
