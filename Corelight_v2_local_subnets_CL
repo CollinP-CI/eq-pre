@@ -14,7 +14,7 @@ $tableParams = @'
       ]
     }
   }
-}
+},
     "plan": "Analytics"
 }
 '@
