@@ -4,11 +4,13 @@ $tableParams = @'
   "schema": {
   "name": "Corelight_v2_generic_icmp_tunnels_CL",
   "columns": [
- { "name": "timestamp", "type": "datetime", "description": "Time of the ICMP tunneling event" },
-    { "name": "source_ip", "type": "string", "description": "IP address of the ICMP sender" },
-    { "name": "destination_ip", "type": "string", "description": "IP address of the ICMP receiver" },
-    { "name": "icmp_type", "type": "integer", "description": "Type of ICMP packet (e.g., echo request)" },
-    { "name": "tunnel_detected", "type": "boolean", "description": "Indicates whether tunneling was detected" }
+    { "name": "TimeGenerated", "type": "datetime" },
+    { "name": "SourceIP", "type": "string" },
+    { "name": "DestinationIP", "type": "string" },
+    { "name": "ICMPType", "type": "string" },
+    { "name": "ICMPCode", "type": "string" },
+    { "name": "PayloadSize", "type": "int" },
+    { "name": "SuspiciousFlag", "type": "bool" }
   ]
 },
     "plan": "Analytics"
