@@ -11,8 +11,6 @@ $tableParams = @'
     { "name": "BroadcastTraffic", "type": "real" },
     { "name": "MulticastTraffic", "type": "real" }
   ]
-}
-  ]
 },
     "plan": "Analytics"
 }
