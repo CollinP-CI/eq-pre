@@ -16,4 +16,4 @@ $tableParams = @'
     "plan": "Analytics"
 }
 '@
-Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/SentinelTesting_RG/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_ntlm_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
+Invoke-AzRestMethod -Path "/subscriptions/2eff1c6d-f789-4be8-ab50-33d5b116d7a5/resourceGroups/sentinel_operations/providers/Microsoft.OperationalInsights/workspaces/SENTINEL-Equitable-LogAnalyticsWorkspace/tables/Corelight_v2_ntlm_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
