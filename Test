@@ -1,0 +1,19 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_ntlm_CL",
+  "columns": [
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "SourceIP", "type": "string" },
+        { "name": "DestinationIP", "type": "string" },
+        { "name": "NTLMVersion", "type": "int" },
+        { "name": "Username", "type": "string" },
+        { "name": "Domain", "type": "string" },
+        { "name": "Workstation", "type": "string" },
+        { "name": "MessageType", "type": "string" }
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/6a8cbfca-fb3f-42a3-bff4-2d7cfa2c422f/resourceGroups/sentineltesting_rg/providers/Microsoft.OperationalInsights/workspaces/EndUsersPreprod-Sentinel-LogAnalyticsWorkspace/tables/Corelight_v2_ntlm_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
