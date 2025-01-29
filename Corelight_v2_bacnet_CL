@@ -1,0 +1,26 @@
+$tableParams = @'
+{
+  "properties": {
+  "schema": {
+  "name": "Corelight_v2_bacnet_CL",
+  "columns": [
+        { "name": "TimeGenerated", "type": "datetime" },
+        { "name": "path", "type": "string" },
+        { "name": "system_name", "type": "string" },
+        { "name": "write_ts", "type": "datetime" },
+        { "name": "uid", "type": "string" },
+        { "name": "id_orig_h", "type": "string" },
+        { "name": "id_orig_p", "type": "int" },
+        { "name": "id_resp_h", "type": "string" },
+        { "name": "id_resp_p", "type": "int" },
+        { "name": "bvlc_function", "type": "string" },
+        { "name": "bvlc_len", "type": "int" },
+        { "name": "apdu_type", "type": "string" },
+        { "name": "service_choice", "type": "string" },
+        { "name": "data", "type": "string" }
+  ]
+},
+    "plan": "Analytics"
+}
+'@
+Invoke-AzRestMethod -Path "/subscriptions/2eff1c6d-f789-4be8-ab50-33d5b116d7a5/resourceGroups/sentinel_operations/providers/Microsoft.OperationalInsights/workspaces/SENTINEL-Equitable-LogAnalyticsWorkspace/tables/Corelight_v2_bacnet_CL?api-version=2021-12-01-preview" -Method PUT -Payload $tableParams
